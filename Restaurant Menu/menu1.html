@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu1.css">
+    <link rel="website icon" type="png" href="Dominos1.png">
+    <style>
+        .headerPart {
+            margin-top: 250px;
+        }
+
+        span {
+            font-size: 150px;
+            position: relative;
+            animation: moveAndColorChange 4s linear infinite;
+        }
+
+        @keyframes moveAndColorChange {
+            0% {
+                left: 0;
+                color: #de0808;
+            }
+            25%{
+                left: 50%;
+                color: salmon;
+            }
+            50%{
+                left: 100%;
+                color: rgb(118, 250, 114);
+            }
+            75%{
+                left: 50%;
+                color: rgb(88, 5, 68);
+            }
+            100%{
+                left: 0%;
+                color: rgb(168, 192, 14);
+            }
+
+        }
+
+        .card {
+            border-radius: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            background-color: aquamarine;
+            border-radius: 30px;
+            transform: rotate(-180deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="headerPart">
+        <span>Domino's</span>
+        <br>
+        <div align="center">
+        <a href="menu.html">
+            <button class="card">Check out <br> MENU</button>
+        </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

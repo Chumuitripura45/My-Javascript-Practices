@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temp.css">
+    <style>
+        body{
+            /* background-image: url(backgroundImg.jpg); */
+        }
+        .container{
+            margin: 10rem 15rem 0 15rem;
+            padding: 20px  30px 30px 30px;
+            background-color: antiquewhite;
+            border-radius: 30px;
+        }
+        h1{
+            /* text-align: center; */
+            font-family: cursive;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: red;
+        }
+        p{
+            font-size: 30px;
+            font-family: cursive;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" align="center" id="container">
+        <h1>Temperature Check</h1>
+        <div id="forCel">
+            <input type="number" id="celValue" placeholder="Enter your celsius value">
+            <button onclick="convertF()">Convert to fahrenheit</button>
+            <p id="displayF"></p>
+        </div>
+        <div id="forFre">
+            <input type="number" id="fValue" placeholder="Enter your fahrenheit value" style="margin-left: -16px;">
+            <button onclick="convertC()">Convert to celsius</button>
+            <p id="displayCel"></p>
+        </div>
+        
+    </div>
+    <script src="temp.js"></script>
+</body>
+</html>

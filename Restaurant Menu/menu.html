@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="website icon" type="png" href="Dominos1.png">
+    <style>
+        hr {
+            border: 3px solid black;
+        }
+        .titleHeader{
+            font-family: cursive;
+            color: rgb(164, 30, 7);
+        }
+        .headerRest {
+            position: relative;
+            animation: imageMoving 4s linear infinite;
+        }
+
+        @keyframes imageMoving {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 100%;
+            }
+
+            100% {
+                left: 0%;
+            }
+
+        }
+        .navElement:hover{
+            color: red;
+        }
+
+        .footer-Part {
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body bgcolor="antiquewhite">
+    <h1 align="center" class="titleHeader">Restaurant MeNu</h1>>
+    <br><img src="images/chief.jpg" class="headerRest">
+    <nav style="background-color: yellow; font-size: 19px; border: 3px solid red;">
+        <ul style="display: flex; justify-content: space-between;">
+            <a href="menu1.html"><li class="navElement">HOME</li></a>
+            <a href="#menu" class="navElement"><li>MENU</li></a>
+            <a href="#contact" class="navElement"><li>CONTACT</li></a>
+            <a href="feedBack.html" class="navElement"><li>More Info</li></a>
+        </ul>
+    </nav>
+    <div align="center">
+        <section class="menu" id="breakfast-menu" id="menu">
+            <article class="menu-item">
+                <h2>Breakfast Menu</h2>
+                <table>
+                    <tr>
+                        <td><img src="images/image1.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 1</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$8.99</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/image2.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 2</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$8.99</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/image3.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 3</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$8.99</span>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <section class="menu" id="lunch-menu">
+            <article class="menu-item">
+                <h2>Lunch Menu</h2>
+                <table>
+                    <tr>
+                        <td><img src="images/image4.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 1</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$12.99</span>
+                        </td>
+                        <hr>
+                        <td><img src="images/image5.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 2</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$12.99</span>
+                        </td>
+                        <hr>
+                        <td><img src="images/image2.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 3</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$12.99</span>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <section class="menu" id="dinner-menu">
+            <article class="menu-item">
+                <h2>Dinner Menu</h2>
+                <table>
+                    <tr>
+                        <td><img src="images/image1.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 1</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$19.99</span>
+                        </td>
+                        <hr>
+                        <td><img src="images/image3.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 2</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$19.99</span>
+                        </td>
+                        <hr>
+                        <td><img src="images/image5.jpg" width="100px"></td>
+                        <td>
+                            <h3>Item 3</h3>
+                            <p>Margherita is one of the most poptrar types of Pizza</p>
+                            <span class="price">$19.99</span>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </div>
+    <h2 align="center" id="contact">For more information</h2>
+    <div class="firstDiv" align="center">
+        <form method="get" action="images/thanks.jpg">
+            <table border="1">
+                <tr align="center">
+                    <td colspan="2">
+                        <font size="10">Sign up </font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <label>Name</label>
+                    </td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Age</label>
+                    </td>
+                    <td><input type="date"></td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <label>Mobile No.</label>
+                    </td>
+                    <td><input type="number"></td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <label>Email</label>
+                    </td>
+                    <td><input type="email"></td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <label>Password</label>
+                    </td>
+                    <td><input type="password" minlengtd="8"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Address</label>
+                    </td>
+                    <td>
+                        <textarea></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <label>Gender</label>
+                    </td>
+                    <td>
+
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Country</label>
+                    </td>
+                    <td>
+                        <select name="city">
+                            <option value="India">India</option>
+                            <option value="Soutd Africa">Soutd Africa</option>
+                            <option value="America">America</option>
+                            <option value="Japan">Japan</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="Submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <footer align="center" class="footer-Part">
+        &copy; Copyright Resturantly. All Right Reversed
+    </footer>
+
+</body>
+
+</html>

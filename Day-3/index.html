@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="website icon" type="jpg" href="thanks.jpg">
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .headerPart{
+            color: red;
+            font-family: cursive;
+            position: relative;
+            animation: headerPartMove 4s linear infinite;
+        }
+        @keyframes headerPartMove{
+            0%{
+                left: 0;
+                color: blue;
+            }
+            25%{
+                left: 50%;
+                color: blueviolet;
+            }
+            50%{
+                left: 100%;
+                color: brown;
+            }
+            75%{
+                left: 50%;
+                color: tomato;
+            }
+            100%{
+                left: 0;
+                color: violet;
+            }
+        }
+        .thanksPart{
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="headerPart">Chumui Tripura</h1>
+    <div align="center">
+        <h1>Play the video</h1>
+        <video src="audioAndVideo/videoFile.mp4" controls></video>
+        <br>
+        <h1>Play the audio</h1>
+        <audio src="audioAndVideo/Rome.mp3" controls></audio>
+    </div>
+    <div class="thanksPart" align="center">
+        <img src="thanks.jpg" alt="thaksImage">
+    </div>
+</body>
+</html>

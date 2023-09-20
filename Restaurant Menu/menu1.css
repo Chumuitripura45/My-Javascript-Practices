@@ -1,0 +1,14 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Dominos1.png");
+    min-height: 90%;
+}
+
+button{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: cursive;
+    background-color: rgb(236, 181, 109);
+}
+

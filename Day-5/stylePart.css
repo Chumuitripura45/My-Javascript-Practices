@@ -1,0 +1,10 @@
+body{
+    background-color: rebeccapurple;
+}
+
+.formPart{
+    padding: 10rem;
+    margin: 40px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+}

@@ -1,0 +1,47 @@
+/* img{
+    width: 100%;
+} */
+
+body{
+    background-color: rebeccapurple;
+}
+.containBody{
+    background-color: aliceblue;
+    margin: 80px;
+}
+.navBar{
+    padding: 20px 40px 10px 20px;
+}
+.navtitle{
+    padding: 15px 13rem 15px 15px;
+    font-size: 20px;
+    font-family: cursive, 'Arial Narrow Bold', sans-serif;
+}
+.navElement{
+    padding-left: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: cursive;
+}
+.navButton{
+   border-radius: 40px;
+   font-size: 20px;
+   margin-left: 160px;
+   cursor: pointer;
+   font-family: cursive;
+   transition: transform 0.3s ease;
+}
+
+.navButton:hover{
+    transform: rotate(-180deg);
+    color: aliceblue;
+    background-color: rebeccapurple;
+}
+hr{
+    border: 1px solid black;
+}
+
+.authenticBody{
+    margin: 20px 70px 10px 70px;
+    background-color: antiquewhite;
+}

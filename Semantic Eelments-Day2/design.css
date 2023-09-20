@@ -1,0 +1,12 @@
+.common{
+    color: red;
+}
+
+#firstOne{
+    font-size: 80px;
+}
+
+h1, div {
+    background-color: bisque;
+}
+

@@ -1,0 +1,10 @@
+body{
+    background-image: url('index.png');
+    color: #ffca00;
+    font-size: 20px;
+}
+table{
+    /* margin-left: 40%; */
+    width: 500px;
+    height: 500px;
+}
