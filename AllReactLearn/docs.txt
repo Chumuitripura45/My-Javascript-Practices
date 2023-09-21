@@ -1,0 +1,118 @@
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+// Component 1: Creating and using functional components
+function Counter() {
+  // State: Managing state using the useState hook
+  const [count, setCount] = useState(0);
+
+  // Effect: Managing side effects using the useEffect hook
+  useEffect(() => {
+    document.title = `Count: ${count}`;
+  }, [count]);
+
+  return (
+    <div>
+      <h2>Counter</h2>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+// Component 2: Creating a component with props
+function Greeting(props) {
+  return <h2>Hello, {props.name}!</h2>;
+}
+
+// Component 3: Creating a controlled form
+function FormDemo() {
+  const [inputValue, setInputValue] = useState('');
+  const [submittedValue, setSubmittedValue] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmittedValue(inputValue);
+  };
+
+  return (
+    <div>
+      <h2>Form Demo</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="Enter your name"
+        />
+        <button type="submit">Submit</button>
+      </form>
+      {submittedValue && <p>You submitted: {submittedValue}</p>}
+    </div>
+  );
+}
+
+// Component 4: Routing with React Router
+function Navigation() {
+  return (
+    <div>
+      <h2>Navigation</h2>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/counter">Counter</Link>
+        </li>
+        <li>
+          <Link to="/greeting">Greeting</Link>
+        </li>
+        <li>
+          <Link to="/form">Form Demo</Link>
+        </li>
+      </ul>
+      <hr />
+      <Route exact path="/" component={Home} />
+      <Route path="/counter" component={Counter} />
+      <Route path="/greeting" render={() => <Greeting name="User" />} />
+      <Route path="/form" component={FormDemo} />
+    </div>
+  );
+}
+
+// Component 5: A simple home component
+function Home() {
+  return <h2>Welcome to the React Demo!</h2>;
+}
+
+// Main App component
+function App() {
+  return (
+    <Router>
+      <div>
+        <h1>React Demo</h1>
+        <Navigation />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
+1) We create functional components (Counter, Greeting, FormDemo, Navigation, and Home).
+
+2) We use the useState hook to manage state in the Counter and FormDemo components.
+
+3) We use the useEffect hook in the Counter component to update the document title.
+
+4) We create a controlled form in the FormDemo component, handling form submission and displaying submitted data.
+
+5) We implement routing using react-router-dom, allowing navigation between different components in the Navigation component.
+
+6) We use the Link component to navigate between routes.
+
+7) We define routes using the Route component.
+
+This demo covers some of the core concepts and features of React.js. You can further expand and customize it as needed for your projects. Make sure to install react-router-dom using npm install react-router-dom if you want to use routing.
